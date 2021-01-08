@@ -1,7 +1,6 @@
 from random import *
 
 NumeroVittorie = 0
-
 print("Calcolo della probabilità di vittoria in corso...")
 for partite in range(0, 1000000 + 1):
     Vittoria = True
