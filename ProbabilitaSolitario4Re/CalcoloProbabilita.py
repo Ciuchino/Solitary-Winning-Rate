@@ -2,6 +2,7 @@ from random import *
 
 NumeroVittorie = 0
 
+print("Calcolo della probabilità di vittoria in corso...")
 for partite in range(0, 1000000 + 1):
     Vittoria = True
     # Mazzo di carte napoletane. Ogni elemento è un array il cui primo elemento rappresenta il segno,
@@ -45,12 +46,12 @@ for partite in range(0, 1000000 + 1):
     # Rimane da fare solamente il controllo, ovvero rivedere tutte le carte fino alla quintultima, se sono tutte in ordine allora la partita è vinta
     Seme = 0
     Numero = 0
-    print(Mazzo)
+     #print(Mazzo)
     for Carta in Mazzo:
         # Controllo il mazzo sia in ordine
         if Carta != [Seme, Numero]:
             Vittoria = False
-            print("Hai perso!")
+            #print("Hai perso!")
             # print(Carta)
             # print(Seme)
             # print(Numero)
@@ -62,7 +63,7 @@ for partite in range(0, 1000000 + 1):
             Numero = 0
 
     if Vittoria:
-        print("Hai vinto!")
+        #print("Hai vinto!")
         NumeroVittorie = NumeroVittorie + 1
 
 print(partite)
