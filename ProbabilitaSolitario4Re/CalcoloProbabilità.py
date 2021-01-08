@@ -1,8 +1,9 @@
 from random import *
+NUMBER_OF_MATCHES = 1000000
 
 NumeroVittorie = 0
-print("Calcolo della probabilità di vittoria in corso...")
-for partite in range(0, 1000000 + 1):
+print("Loading...")
+for partite in range(0, NUMBER_OF_MATCHES + 1):
     Vittoria = True
     # Mazzo di carte napoletane. Ogni elemento è un array il cui primo elemento rappresenta il segno,
     # mentre il secondo è il numero.
@@ -65,7 +66,9 @@ for partite in range(0, 1000000 + 1):
         #print("Hai vinto!")
         NumeroVittorie = NumeroVittorie + 1
 
+print("Matches= ")
+print("Number of victories ")
 print(partite)
 print(NumeroVittorie)
-print("Percentuale vittorie= ")
-print(float(NumeroVittorie / partite) * 100)
+print("Victory rate= ")
+print(float(NumeroVittorie/partite)*100 )
